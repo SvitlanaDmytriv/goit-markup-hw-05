@@ -69,7 +69,7 @@
 
 			<section class="hero bg-hero">
 				<h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-				<button type="button" class="button primary">Заказать услугу</button>
+				<button type="button" data-modal-open class="button primary" >Заказать услугу</button>
 			</section>
 
 			<!--features-->
@@ -143,26 +143,36 @@
 				<div class="container">
 					<h2 class="section title">Чем мы занимаемся</h2>
 					<ul class="list grid">
-						<li class="work-item grid-item">
+						<li class="work-item grid-item product-work ">
 							<img
-								src="./images/work/box-1.jpg"
-								width="370"
-								alt="creating-a-site"
+									src="./images/work/box-1.jpg"
+									width="370"
+									alt="creating-a-site"
 							/>
+							<div class="product-work-text">
+								<h3 class="title">Десктопные приложения</h3>
+							</div>
+						   						
 						</li>
-						<li class="work-item grid-item">
+						<li class="work-item grid-item product-work ">
 							<img
 								src="./images/work/box-2.jpg"
 								width="370"
 								alt="creating-a-web-app"
 							/>
+								<div class="product-work-text">
+								<h3 class="title">Мобильные приложения</h3>
+							</div>
 						</li>
-						<li class="work-item grid-item">
+						<li class="work-item grid-item product-work ">
 							<img
 								src="./images/work/box-3.jpg"
 								width="370"
 								alt="stylization-web-app"
 							/>
+								<div class="product-work-text">
+								<h3 class="title">Дизайнерские решения</h3>
+							</div>
 						</li>
 					</ul>
 				</div>
@@ -342,6 +352,8 @@
 				</div>
 			</section>
 
+
+			<!--clients-->
 			<section class="clients padding">
 				<div class="container">
 					<h2 class="section title" >Постоянные клиенты</h2>
@@ -397,6 +409,7 @@
 		<!--footer-->
 		<footer class="dark-bg padding">
 			<div class="container">
+	
 				<div class="contacts">
 					<a href="./index.html" class="logo link"
 						>Web<span class="logotype">Studio</span></a
@@ -422,7 +435,7 @@
 						</ul>
 					</address>
 				</div>
-				<div class="social-contacts">
+				<div class="social contacts">
 					<h3  class="title">присоединяйтесь</h3>
 					<ul class="list social-list">
 						<li class="social-icons-item">
@@ -455,7 +468,22 @@
 						</li>
 					</ul>
 				</div>
-			</div>
+				<div class="contacts"></div>
+				</div>
+			
 		</footer>
+
+		<!--modal window-->
+    <div  data-modal class="backdrop is-hidden">
+		<div class="modal">
+			<button data-modal-close class="btn">
+				<svg class="icon-btn" width=18 height=18>
+					<use href="./images/svg-sprite/sprite.svg#icon-close"></use>
+				</svg>
+			</button>
+		</div>
+	</div>
+
+	<script src="./js/modal.js"></script>
 	</body>
 </html>
